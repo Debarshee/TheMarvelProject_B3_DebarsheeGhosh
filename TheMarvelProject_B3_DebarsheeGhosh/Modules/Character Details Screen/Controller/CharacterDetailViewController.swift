@@ -16,6 +16,11 @@ class CharacterDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel?.fetchCharacterDetails()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         characterImageView.downloadImage(with: viewModel?.getCharacterImageUrl())
         characterDescription.text = viewModel?.getCharacterDescription()
         characterNameLabel.text = viewModel?.getCharacterName()

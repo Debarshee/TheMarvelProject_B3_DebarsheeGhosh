@@ -24,12 +24,13 @@ struct Results: Decodable {
 }
 
 struct MarvelCharacter: Decodable {
+    var id: Int?
     var name: String?
     var description: String?
     var thumbnail: Thumbnail?
     
     enum CodingKeys: String, CodingKey {
-        case name, description, thumbnail
+        case id, name, description, thumbnail
     }
 }
 

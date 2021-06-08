@@ -19,8 +19,8 @@ extension CharactersApi: EndPoint {
         case .charactersList:
             return "v1/public/characters"
             
-        case .characterDetail:
-            return "topics/"
+        case .characterDetail(let id):
+            return "v1/public/characters/\(id)"
         }
     }
     
@@ -36,12 +36,13 @@ extension CharactersApi: EndPoint {
                                       ]
             )
             
-        case .characterDetail(let id):
+        case .characterDetail:
             return .requestParameters(bodyParameters: nil,
                                       bodyEncoding: .urlEncoding,
                                       urlParameters: [
-                                        "page": id,
-                                        "client_id": ApiConfiguration.apiKey
+                                        "ts": 1,
+                                        "apikey": ApiConfiguration.apiKey,
+                                        "hash": ApiConfiguration.hashKey
                                       ]
             )
         }

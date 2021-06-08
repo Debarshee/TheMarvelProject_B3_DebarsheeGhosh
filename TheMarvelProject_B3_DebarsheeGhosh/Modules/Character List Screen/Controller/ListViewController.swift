@@ -43,7 +43,7 @@ extension ListViewController: UITableViewDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let characterDetailViewController = storyboard.instantiateViewController(withIdentifier: "CharacterDetailViewController") as? CharacterDetailViewController else { return }
         let data = viewModel.dataForCell(at: indexPath.row)
-        let detailViewModel = CharacterDetailViewModel(dataSource: data.characterData)
+        let detailViewModel = CharacterDetailViewModel(characterId: data.characterId)
         characterDetailViewController.viewModel = detailViewModel
         self.navigationController?.pushViewController(characterDetailViewController, animated: true)
     }
