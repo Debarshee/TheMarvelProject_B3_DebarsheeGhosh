@@ -24,12 +24,13 @@
 		A335BFE0266ECE0B00E7B3A7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335BFD8266ECE0B00E7B3A7 /* Router.swift */; };
 		A335BFED266ECE3E00E7B3A7 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335BFE3266ECE3E00E7B3A7 /* UIImageView+Ext.swift */; };
 		A335BFEE266ECE3E00E7B3A7 /* ViewReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335BFE4266ECE3E00E7B3A7 /* ViewReusable.swift */; };
-		A335BFEF266ECE3E00E7B3A7 /* AlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335BFE5266ECE3E00E7B3A7 /* AlertProtocol.swift */; };
-		A335BFF0266ECE3E00E7B3A7 /* ShareProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335BFE6266ECE3E00E7B3A7 /* ShareProtocol.swift */; };
 		A335BFF2266ECE3E00E7B3A7 /* ApiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335BFEA266ECE3E00E7B3A7 /* ApiConfiguration.swift */; };
 		A335BFF3266ECE3E00E7B3A7 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335BFEC266ECE3E00E7B3A7 /* ImageCache.swift */; };
 		A335BFFD266EDC7F00E7B3A7 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335BFFC266EDC7F00E7B3A7 /* ListViewModel.swift */; };
 		A335C001266EDD0800E7B3A7 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C000266EDD0800E7B3A7 /* CharacterData.swift */; };
+		A335C003266EE63E00E7B3A7 /* ListTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C002266EE63E00E7B3A7 /* ListTableTableViewCell.swift */; };
+		A335C005266EE71B00E7B3A7 /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C004266EE71B00E7B3A7 /* ListCellViewModel.swift */; };
+		A335C00B266EEDFF00E7B3A7 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C00A266EEDFF00E7B3A7 /* CharacterDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,12 +53,13 @@
 		A335BFD8266ECE0B00E7B3A7 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A335BFE3266ECE3E00E7B3A7 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		A335BFE4266ECE3E00E7B3A7 /* ViewReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewReusable.swift; sourceTree = "<group>"; };
-		A335BFE5266ECE3E00E7B3A7 /* AlertProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertProtocol.swift; sourceTree = "<group>"; };
-		A335BFE6266ECE3E00E7B3A7 /* ShareProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareProtocol.swift; sourceTree = "<group>"; };
 		A335BFEA266ECE3E00E7B3A7 /* ApiConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConfiguration.swift; sourceTree = "<group>"; };
 		A335BFEC266ECE3E00E7B3A7 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		A335BFFC266EDC7F00E7B3A7 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		A335C000266EDD0800E7B3A7 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
+		A335C002266EE63E00E7B3A7 /* ListTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableTableViewCell.swift; sourceTree = "<group>"; };
+		A335C004266EE71B00E7B3A7 /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
+		A335C00A266EEDFF00E7B3A7 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,10 @@
 		A335BFC3266EBE5D00E7B3A7 /* Character Details Screen */ = {
 			isa = PBXGroup;
 			children = (
+				A335C009266EEDDE00E7B3A7 /* ViewModel */,
+				A335C008266EEDD800E7B3A7 /* View */,
+				A335C007266EEDCC00E7B3A7 /* Model */,
+				A335C006266EEDC500E7B3A7 /* Controller */,
 			);
 			path = "Character Details Screen";
 			sourceTree = "<group>";
@@ -225,8 +231,6 @@
 			children = (
 				A335BFE3266ECE3E00E7B3A7 /* UIImageView+Ext.swift */,
 				A335BFE4266ECE3E00E7B3A7 /* ViewReusable.swift */,
-				A335BFE5266ECE3E00E7B3A7 /* AlertProtocol.swift */,
-				A335BFE6266ECE3E00E7B3A7 /* ShareProtocol.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -259,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				A335BFFC266EDC7F00E7B3A7 /* ListViewModel.swift */,
+				A335C004266EE71B00E7B3A7 /* ListCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 		A335BFF9266EDC5700E7B3A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A335C002266EE63E00E7B3A7 /* ListTableTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,6 +282,35 @@
 				A335C000266EDD0800E7B3A7 /* CharacterData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A335C006266EEDC500E7B3A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A335C00A266EEDFF00E7B3A7 /* CharacterDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A335C007266EEDCC00E7B3A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A335C008266EEDD800E7B3A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A335C009266EEDDE00E7B3A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,8 +407,8 @@
 				A335BFCB266ECD1B00E7B3A7 /* CharactersApi.swift in Sources */,
 				A335BFAF266EBD8600E7B3A7 /* ListViewController.swift in Sources */,
 				A335BFDA266ECE0B00E7B3A7 /* URLParameterEncoder.swift in Sources */,
-				A335BFF0266ECE3E00E7B3A7 /* ShareProtocol.swift in Sources */,
 				A335BFDF266ECE0B00E7B3A7 /* HTTPMethod.swift in Sources */,
+				A335C00B266EEDFF00E7B3A7 /* CharacterDetailViewController.swift in Sources */,
 				A335BFE0266ECE0B00E7B3A7 /* Router.swift in Sources */,
 				A335BFDD266ECE0B00E7B3A7 /* EndPoint.swift in Sources */,
 				A335BFD9266ECE0B00E7B3A7 /* ParameterEncoding.swift in Sources */,
@@ -381,11 +416,12 @@
 				A335BFDC266ECE0B00E7B3A7 /* AppError.swift in Sources */,
 				A335BFED266ECE3E00E7B3A7 /* UIImageView+Ext.swift in Sources */,
 				A335BFF2266ECE3E00E7B3A7 /* ApiConfiguration.swift in Sources */,
-				A335BFEF266ECE3E00E7B3A7 /* AlertProtocol.swift in Sources */,
 				A335BFEE266ECE3E00E7B3A7 /* ViewReusable.swift in Sources */,
+				A335C005266EE71B00E7B3A7 /* ListCellViewModel.swift in Sources */,
 				A335BFFD266EDC7F00E7B3A7 /* ListViewModel.swift in Sources */,
 				A335BFDE266ECE0B00E7B3A7 /* HTTPTask.swift in Sources */,
 				A335BFAB266EBD8600E7B3A7 /* AppDelegate.swift in Sources */,
+				A335C003266EE63E00E7B3A7 /* ListTableTableViewCell.swift in Sources */,
 				A335C001266EDD0800E7B3A7 /* CharacterData.swift in Sources */,
 				A335BFDB266ECE0B00E7B3A7 /* JSONParameterEncoder.swift in Sources */,
 				A335BFAD266EBD8600E7B3A7 /* SceneDelegate.swift in Sources */,

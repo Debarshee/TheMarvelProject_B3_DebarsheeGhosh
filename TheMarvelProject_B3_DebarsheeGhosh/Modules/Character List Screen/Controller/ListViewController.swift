@@ -24,11 +24,16 @@ class ListViewController: UIViewController {
 
 extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        viewModel.rowsForTable()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ListTableTableViewCell.identifier, for: indexPath) as? ListTableTableViewCell else {
+            fatalError("Failed to dequeue the cell")
+        }
+        let data = viewModel.dataForCell(at: indexPath.row)
+        cell.configure(configurator: data)
+        return cell
     }
 }
 

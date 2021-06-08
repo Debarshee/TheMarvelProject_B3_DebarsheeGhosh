@@ -13,7 +13,11 @@ protocol ListViewModelDelegate: AnyObject {
 
 class ListViewModel {
     
-    var dataSource: [MarvelCharacter]
+    var dataSource: [ListCellViewModel] {
+        didSet {
+            self.delegate?.reloadTable()
+        }
+    }
     weak var delegate: ListViewModelDelegate?
     let router = Router<CharactersApi>()
     
@@ -26,15 +30,20 @@ class ListViewModel {
         router.request(CharactersApi.charactersList) { (result: Result<CharacterData, AppError>) in
             switch result {
             case .success(let data):
-                if let charData = data.data {
-                    print(charData)
-                } else {
-                    print("ERROR")
-                }
+                guard let characterList = data.data?.results else { return }
+                self.dataSource = characterList.compactMap { ListCellViewModel(dataSource: $0) }
                 
             case .failure(let error):
                 print(error)
             }
         }
+    }
+    
+    func rowsForTable() -> Int {
+        self.dataSource.count
+    }
+    
+    func dataForCell(at index: Int) -> ListCellViewModel {
+        self.dataSource[index]
     }
 }
