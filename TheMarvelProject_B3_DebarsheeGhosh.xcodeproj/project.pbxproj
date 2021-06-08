@@ -31,6 +31,7 @@
 		A335C003266EE63E00E7B3A7 /* ListTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C002266EE63E00E7B3A7 /* ListTableTableViewCell.swift */; };
 		A335C005266EE71B00E7B3A7 /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C004266EE71B00E7B3A7 /* ListCellViewModel.swift */; };
 		A335C00B266EEDFF00E7B3A7 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C00A266EEDFF00E7B3A7 /* CharacterDetailViewController.swift */; };
+		A335C00E266EEF5C00E7B3A7 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C00D266EEF5C00E7B3A7 /* CharacterDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		A335C002266EE63E00E7B3A7 /* ListTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableTableViewCell.swift; sourceTree = "<group>"; };
 		A335C004266EE71B00E7B3A7 /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
 		A335C00A266EEDFF00E7B3A7 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		A335C00D266EEF5C00E7B3A7 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +311,7 @@
 		A335C009266EEDDE00E7B3A7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A335C00D266EEF5C00E7B3A7 /* CharacterDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				A335BFFD266EDC7F00E7B3A7 /* ListViewModel.swift in Sources */,
 				A335BFDE266ECE0B00E7B3A7 /* HTTPTask.swift in Sources */,
 				A335BFAB266EBD8600E7B3A7 /* AppDelegate.swift in Sources */,
+				A335C00E266EEF5C00E7B3A7 /* CharacterDetailViewModel.swift in Sources */,
 				A335C003266EE63E00E7B3A7 /* ListTableTableViewCell.swift in Sources */,
 				A335C001266EDD0800E7B3A7 /* CharacterData.swift in Sources */,
 				A335BFDB266ECE0B00E7B3A7 /* JSONParameterEncoder.swift in Sources */,

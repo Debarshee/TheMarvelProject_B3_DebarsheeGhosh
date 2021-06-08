@@ -11,6 +11,7 @@ class ListViewController: UIViewController {
     @IBOutlet private weak var listTableView: UITableView! {
         didSet {
             self.listTableView.dataSource = self
+            self.listTableView.delegate = self
         }
     }
     
@@ -34,6 +35,17 @@ extension ListViewController: UITableViewDataSource {
         let data = viewModel.dataForCell(at: indexPath.row)
         cell.configure(configurator: data)
         return cell
+    }
+}
+
+extension ListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let characterDetailViewController = storyboard.instantiateViewController(withIdentifier: "CharacterDetailViewController") as? CharacterDetailViewController else { return }
+        let data = viewModel.dataForCell(at: indexPath.row)
+        let detailViewModel = CharacterDetailViewModel(dataSource: data.characterData)
+        characterDetailViewController.viewModel = detailViewModel
+        self.navigationController?.pushViewController(characterDetailViewController, animated: true)
     }
 }
 

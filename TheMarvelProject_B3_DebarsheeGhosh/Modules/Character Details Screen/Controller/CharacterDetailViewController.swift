@@ -8,22 +8,16 @@
 import UIKit
 
 class CharacterDetailViewController: UIViewController {
-
+    @IBOutlet private weak var characterImageView: UIImageView!
+    @IBOutlet private weak var characterDescription: UITextView!
+    @IBOutlet private weak var characterNameLabel: UILabel!
+    
+    var viewModel: CharacterDetailViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        characterImageView.downloadImage(with: viewModel?.getCharacterImageUrl())
+        characterDescription.text = viewModel?.getCharacterDescription()
+        characterNameLabel.text = viewModel?.getCharacterName()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

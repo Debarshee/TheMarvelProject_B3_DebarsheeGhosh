@@ -10,6 +10,7 @@ import Foundation
 protocol ListCellViewModelProtocol {
     var characterImage: String { get }
     var characterName: String { get }
+    var characterData: MarvelCharacter { get }
 }
 
 class ListCellViewModel: ListCellViewModelProtocol {
@@ -28,5 +29,9 @@ class ListCellViewModel: ListCellViewModelProtocol {
     
     var characterName: String {
         self.dataSource.name ?? ""
+    }
+    
+    var characterData: MarvelCharacter {
+        self.dataSource
     }
 }

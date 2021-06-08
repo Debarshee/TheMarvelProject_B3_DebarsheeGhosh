@@ -133,7 +133,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWW-Oh-dcV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWW-Oh-dcV">
                                 <rect key="frame" x="20" y="457" width="64" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -151,9 +151,14 @@
                             <constraint firstItem="f5M-62-IU2" firstAttribute="trailing" secondItem="2ja-KP-5uS" secondAttribute="trailing" constant="20" id="bhN-X6-eqv"/>
                             <constraint firstItem="2ja-KP-5uS" firstAttribute="leading" secondItem="f5M-62-IU2" secondAttribute="leading" constant="20" id="mke-gR-sb7"/>
                             <constraint firstItem="RPi-Nm-6IP" firstAttribute="leading" secondItem="f5M-62-IU2" secondAttribute="leading" constant="20" id="tm6-l8-N0W"/>
-                            <constraint firstItem="f5M-62-IU2" firstAttribute="trailing" secondItem="TWW-Oh-dcV" secondAttribute="trailing" constant="330" id="urm-7Z-Q2H"/>
+                            <constraint firstItem="f5M-62-IU2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TWW-Oh-dcV" secondAttribute="trailing" constant="10" id="urm-7Z-Q2H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterDescription" destination="RPi-Nm-6IP" id="a3n-6v-g1N"/>
+                        <outlet property="characterImageView" destination="2ja-KP-5uS" id="WCS-Fn-RrY"/>
+                        <outlet property="characterNameLabel" destination="TWW-Oh-dcV" id="1ei-J8-Zuz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3KC-mT-MHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
