@@ -8,6 +8,7 @@
 import UIKit
 
 class ListViewController: UIViewController {
+
     @IBOutlet private weak var listTableView: UITableView! {
         didSet {
             self.listTableView.dataSource = self

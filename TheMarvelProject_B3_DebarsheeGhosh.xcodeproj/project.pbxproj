@@ -32,6 +32,9 @@
 		A335C005266EE71B00E7B3A7 /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C004266EE71B00E7B3A7 /* ListCellViewModel.swift */; };
 		A335C00B266EEDFF00E7B3A7 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C00A266EEDFF00E7B3A7 /* CharacterDetailViewController.swift */; };
 		A335C00E266EEF5C00E7B3A7 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335C00D266EEF5C00E7B3A7 /* CharacterDetailViewModel.swift */; };
+		A3CE0A962676986200E4920C /* ComicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CE0A952676986200E4920C /* ComicsCollectionViewCell.swift */; };
+		A3CE0A982676994D00E4920C /* ComicsCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CE0A972676994D00E4920C /* ComicsCollectionCellViewModel.swift */; };
+		A3CE0A9A2676A69000E4920C /* ComicsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CE0A992676A69000E4920C /* ComicsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		A335C004266EE71B00E7B3A7 /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
 		A335C00A266EEDFF00E7B3A7 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		A335C00D266EEF5C00E7B3A7 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		A3CE0A952676986200E4920C /* ComicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3CE0A972676994D00E4920C /* ComicsCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsCollectionCellViewModel.swift; sourceTree = "<group>"; };
+		A3CE0A992676A69000E4920C /* ComicsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +303,7 @@
 		A335C007266EEDCC00E7B3A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3CE0A992676A69000E4920C /* ComicsData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +311,7 @@
 		A335C008266EEDD800E7B3A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A3CE0A952676986200E4920C /* ComicsCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				A335C00D266EEF5C00E7B3A7 /* CharacterDetailViewModel.swift */,
+				A3CE0A972676994D00E4920C /* ComicsCollectionCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -408,10 +417,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A335BFCB266ECD1B00E7B3A7 /* CharactersApi.swift in Sources */,
+				A3CE0A962676986200E4920C /* ComicsCollectionViewCell.swift in Sources */,
 				A335BFAF266EBD8600E7B3A7 /* ListViewController.swift in Sources */,
 				A335BFDA266ECE0B00E7B3A7 /* URLParameterEncoder.swift in Sources */,
 				A335BFDF266ECE0B00E7B3A7 /* HTTPMethod.swift in Sources */,
 				A335C00B266EEDFF00E7B3A7 /* CharacterDetailViewController.swift in Sources */,
+				A3CE0A982676994D00E4920C /* ComicsCollectionCellViewModel.swift in Sources */,
 				A335BFE0266ECE0B00E7B3A7 /* Router.swift in Sources */,
 				A335BFDD266ECE0B00E7B3A7 /* EndPoint.swift in Sources */,
 				A335BFD9266ECE0B00E7B3A7 /* ParameterEncoding.swift in Sources */,
@@ -419,6 +430,7 @@
 				A335BFDC266ECE0B00E7B3A7 /* AppError.swift in Sources */,
 				A335BFED266ECE3E00E7B3A7 /* UIImageView+Ext.swift in Sources */,
 				A335BFF2266ECE3E00E7B3A7 /* ApiConfiguration.swift in Sources */,
+				A3CE0A9A2676A69000E4920C /* ComicsData.swift in Sources */,
 				A335BFEE266ECE3E00E7B3A7 /* ViewReusable.swift in Sources */,
 				A335C005266EE71B00E7B3A7 /* ListCellViewModel.swift in Sources */,
 				A335BFFD266EDC7F00E7B3A7 /* ListViewModel.swift in Sources */,

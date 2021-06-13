@@ -13,6 +13,8 @@ class ListTableTableViewCell: UITableViewCell, ViewReusable {
     
     func configure(configurator: ListCellViewModel) {
         characterImageView.downloadImage(with: configurator.characterImage)
+        characterImageView.layer.cornerRadius = 20
+        characterImageView.clipsToBounds = true
         characterNameLabel.text = configurator.characterName
     }
 }
